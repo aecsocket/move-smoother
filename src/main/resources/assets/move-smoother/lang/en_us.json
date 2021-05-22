@@ -1,0 +1,5 @@
+{
+  "config.movesmoother.title": "Move Smoother Config",
+  "config.movesmoother.fov_coefficient": "FOV Coefficient",
+  "config.movesmoother.fov_coefficient.tooltip": "How much your FOV matters when reducing mouse sensitivity. Higher means lower sensitivity per FOV."
+}
