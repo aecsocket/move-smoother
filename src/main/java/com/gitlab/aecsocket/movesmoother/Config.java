@@ -62,7 +62,7 @@ public class Config implements ModMenuApi {
             ConfigCategory category = builder.getOrCreateCategory(new TranslatableText(""));
             ConfigEntryBuilder entryBuilder = builder.entryBuilder();
             category.addEntry(entryBuilder
-                    .startIntSlider(new TranslatableText("config.movesmoother.fov_coefficient"), (int) (values.fovCoefficient * 100), 0, 100)
+                    .startIntSlider(new TranslatableText("config.movesmoother.fov_coefficient"), (int) (values.fovCoefficient * 100), 0, 200)
                     .setDefaultValue(50)
                     .setTooltip(new TranslatableText("config.movesmoother.fov_coefficient.tooltip"))
                     .setSaveConsumer(v -> values.fovCoefficient = v / 100d)

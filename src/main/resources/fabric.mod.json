@@ -3,9 +3,12 @@
   "id": "move-smoother",
   "version": "${version}",
   "name": "Move Smoother",
-  "description": "Smooths various camera and movement issues in Minecraft",
-  "authors": [],
-  "contact": {},
+  "description": "Smooths various camera and movement issues in Minecraft.",
+  "authors": [ "aecsocket", "TheShwarma" ],
+  "contact": {
+    "homepage": "https://gitlab.com/aecsocket/move-smoother",
+    "sources": "https://gitlab.com/aecsocket/move-smoother"
+  },
   "license": "MIT",
   "icon": "assets/move-smoother/icon.png",
   "environment": "client",
@@ -19,8 +22,9 @@
   ],
   "depends": {
     "fabricloader": ">=0.11.1",
+    "minecraft": "1.16.5",
     "fabric": "*",
     "modmenu": ">=1.16.8",
-    "minecraft": "1.16.5"
+    "cloth-config2": ">=4.11.0"
   }
 }
