@@ -9,12 +9,6 @@ before_script:
 build:
   script:
     - "gradle --build-cache assemble"
-  cache:
-    key: "$CI_COMMIT_REF_NAME"
-    policy: "push"
-    paths:
-      - "build"
-      - ".gradle"
   artifacts:
     paths:
       - "build/libs/*.jar"
