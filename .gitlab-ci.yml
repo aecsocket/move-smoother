@@ -8,7 +8,7 @@ before_script:
 
 build:
   script:
-    - "gradle --build-cache assemble"
+    - "gradle clean assemble --refresh-dependencies"
   artifacts:
     paths:
       - "build/libs/*.jar"
