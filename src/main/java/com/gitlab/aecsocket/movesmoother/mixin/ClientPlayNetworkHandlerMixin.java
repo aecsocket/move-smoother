@@ -29,8 +29,9 @@ public class ClientPlayNetworkHandlerMixin {
             NetworkThreadUtils.forceMainThread(packet, (ClientPlayNetworkHandler) (Object) this, client);
             PlayerEntity player = client.player;
 
-            player.yaw += packet.getYaw();
-            player.pitch = MathHelper.clamp(player.pitch + packet.getPitch(), -90, 90);
+            EntityAccessor aPlayer = (EntityAccessor) player;
+            aPlayer.setYaw(aPlayer.getYaw() + packet.getYaw());
+            aPlayer.setPitch(MathHelper.clamp(aPlayer.getPitch() + packet.getPitch(), -90, 90));
             player.prevYaw = packet.getYaw();
             player.prevPitch = packet.getPitch();
             callback.cancel();

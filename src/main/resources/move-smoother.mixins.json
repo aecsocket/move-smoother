@@ -2,13 +2,14 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.gitlab.aecsocket.movesmoother.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_14",
   "mixins": [
   ],
   "client": [
     "ClientPlayNetworkHandlerMixin",
     "MouseMixin",
-    "GameRendererAccessor"
+    "GameRendererAccessor",
+    "EntityAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
