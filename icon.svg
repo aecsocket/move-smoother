@@ -7,11 +7,12 @@
    id="svg8"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
    sodipodi:docname="icon.svg"
-   inkscape:export-filename="/home/socket/projects/mc-plugins/calibre/icon.png"
+   inkscape:export-filename="/home/socket/projects/mc-fabric/move-smoother/src/main/resources/assets/move-smoother/icon.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,6 +20,18 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6922">
+      <stop
+         style="stop-color:#5f6cb2;stop-opacity:1;"
+         offset="0"
+         id="stop6918" />
+      <stop
+         style="stop-color:#3e487f;stop-opacity:1"
+         offset="1"
+         id="stop6920" />
+    </linearGradient>
     <style
        id="style8567">.cls-1{fill:none;}.cls-2{fill:#fff;}.cls-3{fill:#fa0;}.cls-4{fill:#aaa;}.cls-5{fill:#55f;}.cls-6{fill:#5f5;}.cls-7{fill:#67cbdf;}.cls-8{fill:#f55;}.cls-9{fill:#f5f;}.cls-10{fill:#ff5;}.cls-11{fill:#444;}</style>
     <clipPath
@@ -32,6 +45,15 @@
          rx="9.8783503"
          ry="6.5854788" />
     </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6922"
+       id="linearGradient6924"
+       x1="609.59998"
+       y1="0"
+       x2="609.59998"
+       y2="135.46666"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -41,8 +63,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35355339"
-     inkscape:cx="390.32294"
-     inkscape:cy="367.69553"
+     inkscape:cx="339.41126"
+     inkscape:cy="435.57778"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -54,9 +76,9 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0"
-     inkscape:snap-nodes="false"
+     inkscape:snap-nodes="true"
      inkscape:object-nodes="true"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      showguides="false"
      inkscape:snap-global="true"
      inkscape:snap-object-midpoints="false"
@@ -72,11 +94,12 @@
     <inkscape:grid
        type="xygrid"
        id="grid6349"
-       spacingx="0.52916664"
-       spacingy="0.52916664"
+       spacingx="2.1166666"
+       spacingy="2.1166666"
        empspacing="4"
        enabled="true"
-       dotted="false" />
+       dotted="false"
+       visible="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -94,29 +117,34 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       inkscape:label="Layer 1"
-       id="layer1-7"
-       transform="translate(-0.0176999,-0.30686173)"
-       style="stroke-width:8.46667;stroke-miterlimit:4;stroke-dasharray:none">
+       id="g9853"
+       transform="translate(-541.86665)"
+       inkscape:export-filename="/home/socket/projects/mc-fabric/move-smoother/src/main/resources/assets/move-smoother/icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <circle
-         style="fill:#808ed3;fill-opacity:1;stroke-width:8.46667;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:url(#linearGradient6924);fill-opacity:1;stroke-width:8.46667;stroke-miterlimit:4;stroke-dasharray:none"
          id="path1110-9"
-         cx="67.75103"
-         cy="68.040192"
+         cx="609.59998"
+         cy="67.73333"
          r="67.73333" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 63.500001,33.866665 33.86666,33.866665 -33.86666,33.86666 H 80.433333 L 114.30001,67.73333 80.433333,33.866665 Z"
-         id="path306" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 50.800002,33.866665 84.666667,67.73333 50.800002,101.59999 H 33.86667 L 67.733335,67.73333 33.86667,33.866665 Z"
-         id="path2720"
-         sodipodi:nodetypes="ccccccc" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 29.633332,42.333331 55.033331,67.73333 29.633332,93.133329 V 76.199996 l 8.466666,-8.466666 -8.466666,-8.466666 z"
-         id="path4780" />
+      <g
+         id="g12097"
+         transform="translate(135.46665)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 469.88228,33.559804 33.86666,33.866665 -33.86666,33.866661 h 16.93333 L 520.68229,67.426469 486.81561,33.559804 Z"
+           id="path306" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 457.18228,33.559804 33.86667,33.866665 -33.86667,33.866661 H 440.24895 L 474.11561,67.426469 440.24895,33.559804 Z"
+           id="path2720"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.46667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 436.01561,42.02647 25.4,25.399999 -25.4,25.399999 V 75.893135 l 8.46667,-8.466666 -8.46667,-8.466666 z"
+           id="path4780" />
+      </g>
     </g>
   </g>
 </svg>
