@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
-@Mixin(value = Mouse.class)
+@Mixin(value = Mouse.class, priority = 1100)
 public class MouseMixin {
     @Shadow @Final private MinecraftClient client;
 
