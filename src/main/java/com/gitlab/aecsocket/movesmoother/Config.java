@@ -17,7 +17,7 @@ import java.nio.file.Path;
 
 public class Config implements ModMenuApi {
     public static final class Values {
-        public double fovCoefficient = 0.5;
+        public double fovCoefficient = 0.75;
     }
 
     private static Values values = new Values();
@@ -28,13 +28,15 @@ public class Config implements ModMenuApi {
     public static Path config() { return FabricLoader.getInstance().getConfigDir().resolve("move-smoother.json"); }
 
     public static void load() {
-        try {
-            BufferedReader reader = Files.newBufferedReader(config());
-            values = gson.fromJson(reader, Values.class);
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-            values = null;
+        if (config().toFile().exists()) {
+            try {
+                BufferedReader reader = Files.newBufferedReader(config());
+                values = gson.fromJson(reader, Values.class);
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+                values = null;
+            }
         }
         if (values == null) {
             values = new Values();

@@ -20,7 +20,7 @@ public class MouseMixin {
             ordinal = 3)
     private double sensitivity(double f) {
         double fovMult = 1 - MathHelper.clamp(((GameRendererAccessor) client.gameRenderer).getMovementFovMultiplier(), 0, 1);
-        f *= 1 - (fovMult * Config.values().fovCoefficient);
+        f *= 1 - MathHelper.clamp(fovMult * Config.values().fovCoefficient, 0, 1);
         return f;
     }
 }
