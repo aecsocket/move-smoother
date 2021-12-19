@@ -1,4 +1,4 @@
-image: "gradle:jdk16"
+image: gradle:latest
 
 variables:
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
@@ -8,13 +8,13 @@ before_script:
 
 build:
   script:
-    - "gradle --build-cache build"
+    - "./gradlew --build-cache build"
   cache:
     key: "$CI_COMMIT_REF_NAME"
-    policy: "push"
+    policy: push
     paths:
-      - "build"
-      - ".gradle"
+      - "*/build"
+      - "*/.gradle"
   artifacts:
     paths:
-      - "build/libs/*.jar"
+      - "*/build/libs/*.jar"
