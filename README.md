@@ -13,11 +13,11 @@ This client-side Fabric mod:
 ### Dependencies
 
 * Minecraft 1.17
-* Fabric Loader >=0.11.6
+* Fabric Loader >=0.12.12
 * [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) *
-* [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) >=2.0.2
-* [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config) >=5.0.34
+* [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) >=3.0.1
+* [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config) >=6.1.48
 
-### [Download Version 1.2](https://gitlab.com/aecsocket/move-smoother/-/jobs/artifacts/master/raw/build/libs/move-smoother-1.2.jar?job=build)
+### [Download Version 1.3](https://gitlab.com/aecsocket/move-smoother/-/jobs/artifacts/master/raw/build/libs/move-smoother-1.3.jar?job=build)
 
 The mod provides an in-game mod menu to configure it.
