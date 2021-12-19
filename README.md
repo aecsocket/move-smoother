@@ -12,7 +12,7 @@ This client-side Fabric mod:
 
 ### Dependencies
 
-* Minecraft 1.17
+* Minecraft 1.18.1
 * Fabric Loader >=0.12.12
 * [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) *
 * [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) >=3.0.1
