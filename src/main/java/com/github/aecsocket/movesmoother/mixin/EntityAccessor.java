@@ -1,4 +1,4 @@
-package com.gitlab.aecsocket.movesmoother.mixin;
+package com.github.aecsocket.movesmoother.mixin;
 
 import net.minecraft.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;

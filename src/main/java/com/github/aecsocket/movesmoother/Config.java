@@ -1,4 +1,4 @@
-package com.gitlab.aecsocket.movesmoother;
+package com.github.aecsocket.movesmoother;
 
 import com.google.gson.Gson;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
@@ -17,7 +17,7 @@ import java.nio.file.Path;
 
 public class Config implements ModMenuApi {
     public static final class Values {
-        public double fovCoefficient = 0.75;
+        public double sensLerp = 0.9;
     }
 
     private static Values values = new Values();
@@ -58,18 +58,17 @@ public class Config implements ModMenuApi {
         load();
         return parent -> {
             ConfigBuilder builder = ConfigBuilder.create()
-                    .setParentScreen(parent)
-                    .setTitle(new TranslatableText("config.movesmoother.title"))
-                    .setSavingRunnable(Config::save);
+                .setParentScreen(parent)
+                .setTitle(new TranslatableText("config.movesmoother.title"))
+                .setSavingRunnable(Config::save);
             ConfigCategory category = builder.getOrCreateCategory(new TranslatableText(""));
             ConfigEntryBuilder entryBuilder = builder.entryBuilder();
             category.addEntry(entryBuilder
-                    .startIntSlider(new TranslatableText("config.movesmoother.fov_coefficient"), (int) (values.fovCoefficient * 100), 0, 200)
-                    .setDefaultValue(50)
-                    .setTooltip(new TranslatableText("config.movesmoother.fov_coefficient.tooltip"))
-                    .setSaveConsumer(v -> values.fovCoefficient = v / 100d)
-                    .build()
-            );
+                .startIntSlider(new TranslatableText("config.movesmoother.sens_lerp"), (int) (values.sensLerp * 100), 0, 100)
+                .setDefaultValue(90)
+                .setTooltip(new TranslatableText("config.movesmoother.sens_lerp.tooltip"))
+                .setSaveConsumer(v -> values.sensLerp = v / 100d)
+                .build());
             return builder.build();
         };
     }

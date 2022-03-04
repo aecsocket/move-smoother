@@ -1,6 +1,6 @@
-package com.gitlab.aecsocket.movesmoother.client;
+package com.github.aecsocket.movesmoother.client;
 
-import com.gitlab.aecsocket.movesmoother.Config;
+import com.github.aecsocket.movesmoother.Config;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

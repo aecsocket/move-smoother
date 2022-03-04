@@ -1,4 +1,4 @@
-package com.gitlab.aecsocket.movesmoother;
+package com.github.aecsocket.movesmoother;
 
 import net.fabricmc.api.ModInitializer;
 

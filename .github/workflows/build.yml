@@ -40,4 +40,4 @@ jobs:
         with:
           name: "jars"
           path: |
-            */build/libs/*.jar
+            build/libs/*.jar
